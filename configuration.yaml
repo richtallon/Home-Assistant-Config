@@ -18,3 +18,12 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+
+mqtt:
+  broker: !secret mqtt_broker_ip
+  port: 1883
+  client_id: home-assistant
+  username: mqttuser
+  password: !secret mqtt_password
+  discovery: true
+  discovery_prefix: homeassistant
