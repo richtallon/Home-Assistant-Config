@@ -18,6 +18,7 @@ __pycache__
 
 # Ignore folders.
 @eaDir
+.ssh
 .storage
 .cloud
 .google.token
