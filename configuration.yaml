@@ -1,29 +1,17 @@
-homeassistant:
-  # Name of the location where Home Assistant is running
-  name: Home
-  # Location required to calculate the time the sun rises and sets
-  latitude: !secret latitude_loc_home
-  longitude: !secret longitude_loc_home
-  elevation: !secret evelation_loc_home
-  unit_system: imperial
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  time_zone: America/Los_Angeles
-  packages: !include_dir_named packages
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
 
 # Text to speech
 tts:
   - platform: google_translate
 
+packages: !include_dir_named integrations
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
-
-mqtt:
-  broker: !secret mqtt_broker_ip
-  port: 1883
-  client_id: home-assistant
-  username: mqttuser
-  password: !secret mqtt_password
-  discovery: true
-  discovery_prefix: homeassistant
