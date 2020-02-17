@@ -12,7 +12,7 @@ http:
 tts:
   - platform: google_translate
 
-#packages: !include_dir_named integrations
+packages: !include_dir_named integrations
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
