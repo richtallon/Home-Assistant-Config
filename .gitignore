@@ -24,6 +24,7 @@ __pycache__
 .google.token
 deps
 tts
+node-red
 
 
 # Specific file ignores
