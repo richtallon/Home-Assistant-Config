@@ -25,6 +25,7 @@ __pycache__
 deps
 tts
 node-red
+esphome
 
 
 # Specific file ignores
@@ -35,3 +36,4 @@ ip_bans.yaml
 known_devices.yaml
 options.xml
 secrets.yaml
+esphome.json
