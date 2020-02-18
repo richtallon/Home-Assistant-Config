@@ -1,0 +1,4 @@
+platform: denonavr
+host: !secret denon_ip
+zones:
+  - zone: Zone2

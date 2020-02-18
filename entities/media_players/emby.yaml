@@ -1,0 +1,4 @@
+platform: emby
+host: !secret tower_ip
+api_key: !secret emby_api_key
+

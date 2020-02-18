@@ -1,0 +1,5 @@
+platform: synology
+url: !secret ds1_cam_url
+username: !secret synology_user
+password: !secret synology_password
+verify_ssl: False

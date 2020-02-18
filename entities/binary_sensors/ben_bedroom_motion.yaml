@@ -1,0 +1,7 @@
+platform: mqtt
+name: "ben_bedroom_motion"
+state_topic: "home/sensornode1"
+value_template: '{{ value_json.motion }}'
+payload_on: "motion detected"
+payload_off: "standby"
+device_class: motion
